@@ -1,0 +1,65 @@
+Wallet Address£º
+12YfHxVPXKP33tQZ9ZiGbVu1dDuu1FB7gG
+
+
+Message to be signed by your wallet£º
+12YfHxVPXKP33tQZ9ZiGbVu1dDuu1FB7gG: Udacity rocks!
+
+
+Signature£º
+IImUK4ZyYviUtMZggcnoIxmr5vjzq0MICwxCPhBGbL8JIiSna+HiEKAUhThmFJNfBzgeu/IqgkaPyTEwh+dHdy4=
+
+
+new address 01:
+public key: mnUx3KmY7AYzqaeN39c4sVUNmNM7CqztXk
+
+private key: 
+
+cQfhnEGJN7mz6LPtnzQdZtCt62gF5hvQQh9J2YvKp7Zzzhca6YfK
+
+Message to be signed by your wallet£º
+
+{
+    
+"walletAddress": "mnUx3KmY7AYzqaeN39c4sVUNmNM7CqztXk",
+    
+"requestTimeStamp": "1547110394",
+   
+ "message": "mnUx3KmY7AYzqaeN39c4sVUNmNM7CqztXk:1547110394:starRegistry",
+    "validationWindow": 300
+
+}
+
+Signature:
+IF2ig8OOi+674QQE4B+AQrlB0+JxN50+2Gb//FX9/WFHcM0YsBU9XbL3iB5QVb7ngZ3KFRrwFrVJGZM6r9W46Gc=
+
+new valid address 02:
+public key:
+mj1zk1nJYYPa5xzzUSPbtEjnSTr6KjfeZC
+
+private key:
+cSBmbJorQRKgbuqBRScPyncqW9SuuQMNP4sLW2duNas1oNX3XYyb
+
+
+star 1:
+   "star": {
+                "dec": "17¡ã 7' 48.5",
+                "ra": "4h 1m 27.0s",
+                "mag":"4.9"
+                "cen":"Taurus"
+                "story": "Taurus was the first sign of the zodiac established among the ancient Mesopotamians, who called it as "The Great Bull of Heaven", because it was the constellation through which the sun rose on the vernal equinox at that time. Cults centered around sacred bulls began to form in Assyria, Egypt, and Crete during The Age of Taurus"
+            }
+
+star 2:
+ "star": {
+                "dec": "-26¡ã 29' 24.9",
+                "ra": "16h 29m 1.0s",
+                "mag":"4.9"
+                "cen":"Taurus"
+                "story": "Found star using https://www.google.com/sky/"
+}
+
+
+
+
+

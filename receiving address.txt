@@ -1,0 +1,9 @@
+Receiving address£º
+2N25kztpk8j1yDZJvRA7cvmag9gMz6gRcSj
+message: "2N25kztpk8j1yDZJvRA7cvmag9gMz6gRcSj:1547025365:starRegistry"
+signature:
+
+
+Or:
+2N559KYWLreeNF4LbWAFvRWkYarrAL6iqyC
+signature:
