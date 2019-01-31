@@ -205,7 +205,7 @@ async postBlock(){
                         console.log("All characters of story are ascii code!");
                     }
                     
-                    if(story.length > 500){
+                    if(story.length > 500 || story.length === 0){
                         throw "The story is too long!";
                     }
 
@@ -217,14 +217,24 @@ async postBlock(){
 
                    //Verify if the request validation exists and if it is valid.
                    let verifiedid = false;
+                   let index = -1;
+                   let indexofvalue = null;
                    this.mempoolValid.forEach(function(value){
+                       //if input address equals to the address from value.status
                     if( address === value.status.address){
-                        verifiedid = true;                       
+                        verifiedid = true;
+                        // console.log("value message:"+value.status.message);
+                        indexofvalue = value; 
+                        // console.log("indexofvalue:"+ indexofvalue.status.message);                                         
                     }
                     else{
                         throw "This address is not verified yet, please make sure it is valid!";
                     }
                 })
+
+                //get the index of data value associated with verified address 
+                index = this.mempoolValid.indexOf(indexofvalue);  
+                // console.log("index:"+index);
                     
                     if(verifiedid)
                     {
@@ -244,6 +254,16 @@ async postBlock(){
 
                         const blockAux = new BlockClass.Block(body);
                         await blockchain.addBlock(blockAux);
+                        //Once the block is added, we should remove all the data associated with the address
+                        // from the mempool to avoid the multiple registrations of stars
+
+                        //delete address from mempool
+                        delete this.mempool[address];
+
+                        //delete all the data associated with address from valid mempool
+                        if (index > -1) {
+                            this.mempoolValid.splice(index, 1);
+                        }
 
                         //"storyDecoded" property is not being saved in the block
                         blockAux.body.star.storyDecoded = hex2ascii(body.star.story);

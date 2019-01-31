@@ -54,8 +54,8 @@ star 2:
  "star": {
                 "dec": "-26бу 29' 24.9",
                 "ra": "16h 29m 1.0s",
-                "mag":"4.9"
-                "cen":"Taurus"
+                "mag":"4.9",
+                "cen":"Cen",
                 "story": "Found star using https://www.google.com/sky/"
 }
 
